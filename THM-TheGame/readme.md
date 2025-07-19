@@ -6,20 +6,20 @@ You can find this room [here](https://tryhackme.com/room/hfb1thegame).
 
 ## Looking for the flag
 
-The room is rated as "Easy", so it shouldn't require too much effort. There is a file to download; this file include a ```.exe``` file. So, despite it has been compiled for Windows system, I want to search inside it using the ```strings``` command in my Kali system.
+The room is rated as "Easy", so it shouldn't require too much effort. There is a file to download, which includes a ```.exe``` file. Although it was compiled for Windows, I want to analyze it using the ```strings``` command on my Kali system.
 
 ![strings command](strings_command.png)
 
-This is the result:
+Here is the result:
 
 ![strings result](strings_result.png)
 
-There are many strings in the file, but I know that the string I'm looking for starts with *THM{*. So, I can ```grep``` the result:
+There are many strings in the file, but I know that the one I'm looking for starts with *THM{*. So, I can filter the result using ```grep```:
 
 ![strings_grep](strings_grep.png)
 
-And I obtain my flag!
+And I get the flag!
 
 ![strings_grep_result](strings_grep_result.png)
 
-Really this room was easy, and the flag can be captured in few minutes.
+This room was indeed easy, and the flag can be captured in just a few minutes.
