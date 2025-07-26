@@ -1,0 +1,13 @@
+<h1 id="tryhackme-the-game">TryHackMe - The Game</h1>
+<p>You can find this room <a href="https://tryhackme.com/room/hfb1thegame">here</a>.</p>
+<p><img src="room_header.png" alt="Room header"></p>
+<h2 id="looking-for-the-flag">Looking for the flag</h2>
+<p>The room is rated as &quot;Easy&quot;, so it shouldn&#39;t require too much effort. There is a file to download, which includes a <code>.exe</code> file. Although it was compiled for Windows, I want to analyze it using the <code>strings</code> command on my Kali system.</p>
+<p><img src="strings_command.png" alt="strings command"></p>
+<p>Here is the result:</p>
+<p><img src="strings_result.png" alt="strings result"></p>
+<p>There are many strings in the file, but I know that the one I&#39;m looking for starts with <em>THM{</em>. So, I can filter the result using <code>grep</code>:</p>
+<p><img src="strings_grep.png" alt="strings_grep"></p>
+<p>And I get the flag!</p>
+<p><img src="strings_grep_result.png" alt="strings_grep_result"></p>
+<p>This room was indeed easy, and the flag can be captured in just a few minutes.</p>
